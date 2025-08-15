@@ -1,1 +1,21 @@
+{% extends "base.html" %}
+{% block title %}{{ project.title }} — Проект{% endblock %}
+{% block content %}
+<article class="project-page">
+  <img class="project-cover" src="{{ url_for('static', filename=project.image) }}" alt="Картинка проекта">
+  <div class="project-text">
+    <h1>{{ project.title }}</h1>
+    <p>{{ project.description }}</p>
+
+    <h2>Что я сделал(а)</h2>
+    <ul>
+      <li>Спланировал(а) идею и дизайн</li>
+      <li>Собрал(а) основной функционал</li>
+      <li>Протестировал(а) и показал(а) друзьям</li>
+    </ul>
+
+    <a class="btn" href="{{ url_for('index') }}">← На главную</a>
+  </div>
+</article>
+{% endblock %}
 

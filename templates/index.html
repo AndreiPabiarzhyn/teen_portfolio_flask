@@ -1,1 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Главная — Портфолио{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="hero-text">
+    <h1>Привет! Я — <span class="accent">Алекс</span></h1>
+    <p class="lead">
+      Подросток-фрилансер: делаю мини-сайты, простые игры и учебные проекты.
+      Люблю аккуратный дизайн и понятный код.
+    </p>
+    <div class="contacts">
+      <a class="btn" href="mailto:alex.freelance@example.com">Написать на email</a>
+      <a class="btn btn-ghost" href="https://github.com/username" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </div>
+  <div class="hero-illu" aria-hidden="true"></div>
+</section>
+
+<section class="projects">
+  <h2>Мои проекты</h2>
+  <div class="grid">
+    {% for key, p in projects.items() %}
+    <article class="card">
+      <img src="{{ url_for('static', filename=p.image) }}" alt="Изображение проекта: {{ p.title }}">
+      <div class="card-body">
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.description }}</p>
+        <a class="btn small" href="{{ url_for(p.slug) }}">Смотреть</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
 
