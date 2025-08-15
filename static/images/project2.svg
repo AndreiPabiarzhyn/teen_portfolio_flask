@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#60a5fa"></stop>
+      <stop offset="100%" stop-color="#22d3ee"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#0b1220"></rect>
+  <rect x="80" y="90" width="740" height="300" rx="20" fill="#101826" stroke="#1b2740"></rect>
+  <circle cx="720" cy="130" r="70" fill="url(#g2)" opacity="0.85"></circle>
+  <text x="120" y="200" fill="#e6e9f0" font-size="28" font-family="Arial" font-weight="bold">Mini Website HTML/CSS</text>
+  <text x="120" y="240" fill="#a0aec0" font-size="18" font-family="Arial">responsive, cards, clean fonts</text>
+</svg>
