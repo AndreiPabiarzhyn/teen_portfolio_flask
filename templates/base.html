@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{% block title %}Портфолио подростка-фрилансера{% endblock %}</title>
+  <title>{% block title %}Teen Freelancer Portfolio{% endblock %}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
@@ -11,9 +11,9 @@
     <div class="container row">
       <a class="logo" href="{{ url_for('index') }}">Teen<span>Dev</span></a>
       <nav class="nav">
-        <a href="{{ url_for('index') }}">Главная</a>
-        <a href="{{ url_for('project1') }}">Проект 1</a>
-        <a href="{{ url_for('project2') }}">Проект 2</a>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('project1') }}">Project 1</a>
+        <a href="{{ url_for('project2') }}">Project 2</a>
       </nav>
     </div>
   </header>
@@ -24,9 +24,8 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2025 TeenDev. Сделано на Flask.</p>
+      <p>© 2025 TeenDev. Built with Flask.</p>
     </div>
   </footer>
 </body>
 </html>
-

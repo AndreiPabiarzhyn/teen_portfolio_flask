@@ -1,21 +1,20 @@
-
 from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
-# Данные о проектах
+# Project data
 PROJECTS = {
     "project1": {
         "slug": "project1",
-        "title": "Игра-головоломка на Scratch",
+        "title": "Puzzle Game in Scratch",
         "image": "images/project1.svg",
-        "description": "Небольшая игра, где нужно собрать кристаллы и пройти 5 уровней. Сделано в Scratch."
+        "description": "A small game where you need to collect crystals and pass 5 levels. Made in Scratch."
     },
     "project2": {
         "slug": "project2",
-        "title": "Мини-сайт на HTML/CSS",
+        "title": "Mini Website in HTML/CSS",
         "image": "images/project2.svg",
-        "description": "Лендинг о любимом хобби. Адаптивная вёрстка, аккуратные карточки и шрифты."
+        "description": "A landing page about a favorite hobby. Responsive layout, neat cards, and fonts."
     }
 }
 
