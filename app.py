@@ -22,6 +22,7 @@ PROJECTS = {
 def index():
     return render_template('index.html', projects=PROJECTS)
 
+
 @app.route('/project1')
 def project1():
     return render_template('project.html', project=PROJECTS["project1"])
