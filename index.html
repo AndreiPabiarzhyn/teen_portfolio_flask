@@ -1,1 +1,57 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Pet — Bella</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Bella — My Pet</h1>
+    <p>A short story, photos, a video, and a wishes form.</p>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>About My Pet</h2>
+      <p>Bella is a friendly cat who loves to bask in the sun and watch birds. She greets me after school and purrs loudly.</p>
+      <p>In the mornings we play, and in the evenings Bella curls up next to me. She makes every day cozier.</p>
+    </section>
+
+    <section>
+      <h2>Photo Gallery</h2>
+      <div class="gallery">
+        <img src="images/photo1.jpg" alt="Bella on the windowsill">
+        <img src="images/photo2.jpg" alt="Bella playing">
+        <img src="images/photo3.jpg" alt="Bella sleeping">
+      </div>
+    </section>
+
+    <section>
+      <h2>Video</h2>
+      <p class="note">Replace the link with your own YouTube video (format: https://www.youtube.com/embed/ID).</p>
+      <iframe class="video" 
+        src="https://www.youtube.com/embed/5dsGWM5XGdg" 
+        title="Video about Bella" allowfullscreen></iframe>
+    </section>
+
+    <section>
+      <h2>Leave a Wish</h2>
+      <form class="form" action="#" method="post">
+        <label>Name* 
+          <input type="text" name="name" required>
+        </label>
+        <label>Message* 
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+        <p class="note">This form is for demonstration only — without a server, messages are not sent.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">kodland example © 2025</footer>
+</body>
+</html>
